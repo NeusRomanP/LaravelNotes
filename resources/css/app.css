@@ -1,0 +1,160 @@
+body{
+    background-color: #d0d0d0;
+    margin: 0;
+}
+
+#app{
+    padding: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex__space-between{
+    justify-content: space-between;
+}
+
+.flex__center{
+    justify-content: center;
+}
+
+.fit-content{
+    width: fit-content;
+    height: fit-content;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+
+.nav-link{
+    padding: 5px;
+}
+
+.non-style-list{
+    list-style: none;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    min-height: 100%;
+}
+
+.white-text{
+    color: white;
+}
+
+.button{
+    padding:10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.black{
+    background-color: black;
+}
+
+.red{
+    background-color: red;
+}
+
+.center-text{
+    text-align: center;
+}
+
+/*home*/
+
+.home-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*notes*/
+
+label{
+    display: block;
+}
+
+.notes-container{
+    margin: 10px auto;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.note-container{
+    width: 250px;
+    height: 150px;
+    background-color: #DDD;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.note-container h2{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    color: black;
+}
+
+.note-container p{
+    display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*edit*/
+
+.users-outer-container{
+    position: relative;
+}
+
+#users-container{
+    position: absolute;
+}
+
+#users-to-share-with{
+    margin: 5px;
+}
+
+.suggested-user:hover{
+    background-color: #BBB;
+}
+
+.suggested-user{
+    background-color: #DDD;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.suggested-user:not(:first-child){
+    border-top: black solid 1px;
+}
+
+.shared-user{
+    width: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.remove-element{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.go-back{
+    padding-bottom: 20px;
+}
